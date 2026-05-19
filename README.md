@@ -1,12 +1,6 @@
-# Brain Networks for Learning: Technical Documentation
+# Brain Networks for Learning: Network Analysis of Brain Connectivity
 
-**Course**: COP5537 Network Optimization
-
-**Project**: Network Analysis of Brain Connectivity
-
-**Author**: Soleil Cordray
-
-**Submission Date**: December 5, 2025
+By Soleil Cordray
 
 ---
 
@@ -56,7 +50,7 @@ This project applies network optimization algorithms to understand brain connect
 - **Information spreading dynamics** to visualize attention propagation
 - **Community detection** to discover functional brain systems
 
-The complete implementation demonstrates network optimization concepts from COP5537 applied to a real-world neuroscience problem.
+The complete implementation demonstrates network optimization concepts applied to a real-world neuroscience problem.
 
 ---
 
@@ -210,7 +204,7 @@ brain-networks-learning/
 │       ├── mental_health_summary.csv
 │       └── attention_dynamics.csv
 │
-└── report.pdf                   # 4-5 page project report (submission)
+└── report.pdf                   # 4-5 page project report
 ```
 
 ---
@@ -621,7 +615,7 @@ From correlation matrix to graph:
 **Application**: Measure information capacity from attention systems to memory systems
 **Result**: Identifies bottleneck regions limiting learning
 
-**Course Connection**: Topics 8-9 (Network Flow)
+**Graph Theory Connection**: Network Flow
 - Flow conservation constraints
 - Capacity constraints
 - Max-flow min-cut theorem: maximum flow value = minimum cut capacity
@@ -631,7 +625,7 @@ From correlation matrix to graph:
 **Application**: Rank brain regions by importance
 **Result**: Distinguishes learning hubs from peripheral regions
 
-**Course Connection**: Topics 10-11 (Centralities, PageRank & HITS)
+**Graph Theory Connection**: Centralities, PageRank & HITS
 - Degree centrality: Count connections
 - Betweenness: Fraction of shortest paths through node
 - Closeness: Average distance to all other nodes
@@ -642,7 +636,7 @@ From correlation matrix to graph:
 **Application**: Discover functional brain systems
 **Result**: Identifies communities of highly interconnected regions
 
-**Course Connection**: Topic 12 (Graph Clustering)
+**Graph Theory Connection**: Graph Clustering
 - Modularity Q metric
 - Community detection algorithms
 - Spectral clustering concepts
@@ -652,7 +646,7 @@ From correlation matrix to graph:
 **Application**: Characterize brain network topology
 **Result**: Confirms small-world properties (high clustering + short paths)
 
-**Course Connection**: Topics 1-7 (Graph Fundamentals)
+**Graph Theory Connection**: Graph Fundamentals
 - Degree distribution
 - Clustering coefficient
 - Shortest paths (Dijkstra's algorithm concepts)
@@ -685,10 +679,6 @@ These disruptions are simulated by scaling edge weights, then measuring the impa
 
 ### References
 
-**Course Materials**:
-- COP5537 Network Optimization Lecture Notes
-- Textbook: "Network Flows" by Ahuja, Magnanti, and Orlin
-
 **Neuroscience Papers**:
 - Finn et al. (2015). "Functional connectome fingerprinting." Nature Neuroscience
 - Yeo et al. (2011). "Organization of the human cerebral cortex." Journal of Neurophysiology
@@ -700,6 +690,9 @@ These disruptions are simulated by scaling edge weights, then measuring the impa
 - Pandas: https://pandas.pydata.org/docs/
 - Matplotlib: https://matplotlib.org/stable/contents.html
 
+**Further Reading**:
+- "Network Flows" by Ahuja, Magnanti, and Orlin
+
 ### Future Extensions
 
 **Immediate next steps**:
@@ -707,6 +700,7 @@ These disruptions are simulated by scaling edge weights, then measuring the impa
 2. Implement task-based connectivity analysis
 3. Add statistical validation (permutation testing)
 4. Create interactive visualizations (Plotly, NetworkX with D3.js export)
+5. Implement Edmonds-Karp max-flow from scratch (currently delegated to NetworkX)
 
 **Long-term directions**:
 1. Personalized network medicine: Individual-level predictions
@@ -716,5 +710,5 @@ These disruptions are simulated by scaling edge weights, then measuring the impa
 
 ---
 
-**Last Updated**: December 5, 2025
-**Version**: 1.0 (Final Submission)
+**Last Updated**: May 19, 2026
+**Version**: 1.1 (In Progress)
