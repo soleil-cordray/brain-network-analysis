@@ -2,8 +2,6 @@
 
 By Soleil Cordray
 
----
-
 ## Quick Start
 
 ```bash
@@ -23,8 +21,6 @@ open results/figures/
 
 **Expected Runtime**: ~10 minutes on standard hardware
 
----
-
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
@@ -38,8 +34,6 @@ open results/figures/
 9. [Dataset Information](#dataset-information)
 10. [Methodology](#methodology)
 
----
-
 ## Project Overview
 
 This project applies network optimization algorithms to understand brain connectivity patterns that support learning and how mental health conditions disrupt these networks. Using a 90×90 functional connectivity matrix from resting-state fMRI, we implement:
@@ -51,8 +45,6 @@ This project applies network optimization algorithms to understand brain connect
 - **Community detection** to discover functional brain systems
 
 The complete implementation demonstrates network optimization concepts applied to a real-world neuroscience problem.
-
----
 
 ## System Requirements
 
@@ -85,8 +77,6 @@ scikit-learn>=1.3.0
 nilearn>=0.10.0
 nibabel>=5.0.0
 ```
-
----
 
 ## Installation Guide
 
@@ -161,8 +151,6 @@ This script:
   - `region_labels.csv`
   - `learning_networks.json`
 
----
-
 ## Project Structure
 
 ```
@@ -206,8 +194,6 @@ brain-networks-learning/
 │
 └── report.pdf                   # 4-5 page project report
 ```
-
----
 
 ## Running the Analysis
 
@@ -258,8 +244,6 @@ python src/functional_systems.py
 ```
 
 **Note**: All modules can run independently; they each load data and save their own outputs.
-
----
 
 ## Output Files
 
@@ -322,8 +306,6 @@ All numerical results in CSV or JSON format:
 6. **attention_dynamics.csv**
    - Temporal sequence of region activation
    - Simulates information spreading from visual cortex
-
----
 
 ## Code Architecture
 
@@ -441,8 +423,6 @@ After applying disruptions, centralities are recomputed to measure impact.
 **Why low modularity?**
 Brain networks, especially at rest, are highly integrated. The low modularity reflects dense inter-system connectivity rather than isolated clusters. This is consistent with neuroscience findings that cognitive functions require cross-system coordination.
 
----
-
 ## Troubleshooting
 
 ### Common Installation Issues
@@ -548,8 +528,6 @@ mkdir -p results/figures results/data
    pypy3 src/main.py
    ```
 
----
-
 ## Dataset Information
 
 ### Source
@@ -603,8 +581,6 @@ From correlation matrix to graph:
 ```
 
 **High density interpretation**: Brain is highly integrated, not modular. Most regions communicate with most others, enabling flexible cognition.
-
----
 
 ## Methodology
 
@@ -673,8 +649,6 @@ Based on neuroscience literature documenting connectivity changes:
 
 These disruptions are simulated by scaling edge weights, then measuring the impact on learning pathway capacity and hub centralities.
 
----
-
 ## Additional Resources
 
 ### References
@@ -707,8 +681,6 @@ These disruptions are simulated by scaling edge weights, then measuring the impa
 2. Longitudinal tracking: How does therapy/medication restore connectivity?
 3. Intervention design: Which connections should training target?
 4. Cross-species comparison: How do human learning networks compare to other species?
-
----
 
 **Last Updated**: May 19, 2026
 **Version**: 1.1 (In Progress)
